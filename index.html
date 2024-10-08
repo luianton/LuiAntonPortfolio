@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lui Anton - Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   </head>
   <body>
     <header>
-      <h1>Lui Anton Portfolio Website</h1>
+      <div class="logo">
+        <img src="assets/img/favicon.png" alt="Lui Anton Logo" />
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -16,31 +19,34 @@
           <li><a href="html/funfacts.html">Fun Facts</a></li>
         </ul>
       </nav>
+      <div class="cta">
+        <a href="mailto:luianton@oakland.edu" class="btn">Hire Me</a>
+      </div>
     </header>
 
-    <section>
-      <img
-        src="assets/img/self.jpg"
-        alt="Your Image"
-        width="150"
-        height="400"
-      />
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hello, I'm Lui Anton</h1>
+        <p>
+          I am a senior in Informational Technology with demonstrated leadership skills and expertise in problem-solving and strategic planning.
+        </p>
+        <a href="html/myresume.html" class="btn">View My Resume</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/img/self.jpg" alt="Lui Anton" />
+      </div>
+    </section>
+
+    <section class="about">
       <blockquote>
-        "Privacy is not an option, and it shouldn’t be the price we accept for
-        just getting on the internet."— Gary Kovacs
+        "Privacy is not an option, and it shouldn’t be the price we accept for just getting on the internet." — Gary Kovacs
       </blockquote>
       <p>
-        My name is Lui Anton and I am a Informational Technology senior student
-        with demonstrated leadership abilities, strategic planning, and
-        problem-solving expertise. Proactive and hardworking and focused on
-        efficiency to meet any set goals. Currently I am a tech assistant at a
-        school district and I aspire to work in the cyber-security field in the
-        future.
+        My name is Lui Anton and I am an IT senior student. I'm proactive and hardworking, currently working as a tech assistant at a school district, aspiring to enter the cybersecurity field.
       </p>
       <p>
-        To know more about me, check out my
-        <a href="html/myresume.html">Resume</a> and
-        <a href="html/funfacts.html">Fun Facts</a>.
+        Check out my <a href="html/myresume.html">Resume</a> and <a href="html/funfacts.html">Fun Facts</a>.
       </p>
 
       <p>Degree Progress:</p>
@@ -50,13 +56,9 @@
     <footer>
       <hr />
       <p>&copy; 2024 Lui Anton</p>
+      <p>Email: <a href="mailto:luianton@oakland.edu">luianton@oakland.edu</a></p>
       <p>
-        Email: <a href="mailto:luianton@oakland.edu">luianton@oakland.edu</a>
-      </p>
-      <p>
-        <a href="https://www.linkedin.com/in/lui-anton-679406186/">LinkedIn</a>
-        |
-        <a href="https://github.com/luianton">GitHub</a>
+        <a href="https://www.linkedin.com/in/lui-anton-679406186/">LinkedIn</a> | <a href="https://github.com/luianton">GitHub</a>
       </p>
     </footer>
   </body>
