@@ -1,107 +1,126 @@
 /* Global Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);
-    color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  color: #333;
 }
 
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-    max-width: 80px;
+  max-width: 80px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 nav ul li a {
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px;
-    color: #007bff;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #0056b3;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: color 0.3s ease;
 }
 
 .cta .btn {
-    background-color: #28a745;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .cta .btn:hover {
-    background-color: #218838;
+  background-color: #218838;
 }
 
+/* Hero Section */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 50px;
-    background-image: url('assets/img/background.svg');
-    background-size: cover;
-    background-position: right bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 50px;
+  background-image: url("assets/img/repeating-triangles.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Full viewport height */
 }
 
+/* Styling the Hero Text */
 .hero-text {
-    flex-basis: 50%;
-    color: #fff;
+  flex-basis: 50%; /* Takes up 50% of the width */
+  color: #fff; /* White color for visibility */
+  max-width: 500px; /* Limits text width */
 }
 
+/* Font and Size Adjustments */
 .hero-text h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 48px; /* Larger font size for heading */
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
 }
 
 .hero-text p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    max-width: 400px;
+  font-size: 18px; /* Adjust font size for paragraphs */
+  line-height: 1.6; /* Improves readability */
+  margin-bottom: 20px;
+  font-family: "Georgia", serif; /* Custom font for paragraphs */
 }
 
-.hero-text .btn {
-    background-color: #007bff;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 16px;
+/* Adjust Link Styling Inside Hero Text */
+.hero-text a {
+  color: #ffd700; /* Golden color for links */
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-.hero-text .btn:hover {
-    background-color: #0056b3;
+.hero-text a:hover {
+  color: #ff4500; /* Hover color for links */
+}
+
+/* Hero Image */
+.hero-image {
+  flex-basis: 50%; /* Takes up the other 50% of the width */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
 }
 
 .hero-image img {
-    max-width: 400px;
-    border-radius: 50%;
-    transition: transform 0.5s ease;
+  max-width: 400px;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
 }
 
 .hero-image img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05); /* Zoom effect on hover */
 }
 
+/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
 }
